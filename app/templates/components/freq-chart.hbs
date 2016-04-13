@@ -1,0 +1,20 @@
+<div class="chart">
+  <div class="title">{{title}} : {{frequency}}</div>
+  <h6 class="y-label">Frequency</h6>
+  <div class="y-scale">
+    {{#each y_scale as |number|}}
+      <span>{{number}}</span>
+    {{/each}}
+  </div>
+  <div class="chart-body">
+    {{#each values as |value|}}
+      {{chart-bar value=value}}
+    {{/each}}
+  </div>
+  <div class="x-scale">
+    {{#each x_scale as |number|}}
+      <span>{{number}}</span>
+    {{/each}}
+  </div>
+  {{yield}}
+</div>
