@@ -1,0 +1,21 @@
+<div class="chart">
+  <div class="title"><h3>{{title}}</h3></div>
+  <h6 class="y-label">Frequency</h6>
+  <div class="y-scale">
+    {{#each frequency_scale as |number|}}
+      <div style={{y_scale_dims}}>{{number}}</div>
+    {{/each}}
+  </div>
+  <div class="chart-body" style={{chart_body}}>
+    {{#each data_frequency as |value|}}
+      {{chart-bar value=value intervals=y_intervals max=y_scale_max chart_height=chart_height bar_width=bar_width}}
+    {{/each}}
+  </div>
+  <div class="x-scale">
+    {{#each data_scale as |number|}}
+      <div style={{bar_width}}>{{number}}</div>
+    {{/each}}
+  </div>
+  <h6 class="x-label">Values</h6>
+  {{yield}}
+</div>
