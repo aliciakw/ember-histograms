@@ -1,10 +1,17 @@
+/* Page Styles */
 body {font-family:'Helvetica Neue', 'Helvetica', sans-serif;}
-.chart { width:250px; margin-left:5%;}
-.chart .title { margin-bottom:-12px; font-size:13px;}
+.container { text-align:center; width:100%;}
+.col-half { width:50%; float:left;}
+.experiment img { margin: 40px;}
+.chart { margin-left: auto; margin-right: auto;}
+
+/* Chart Styles */
+.chart { width:250px;}
+.chart .title { margin-bottom:-30px; font-size:13px;}
 .x-scale { width:249px; color:#333; font-size:8px;}
 .x-scale div { float:left; text-align:right; border-right:1px solid #eee; height:11px; padding-right:2px;}
 .x-label { text-align:left; width:100%; padding-top:10px; font-size:10px;height:18px;}
-.frequency-graph .x-scale div {text-align:right;}
+.x-scale div {text-align:right;}
 .y-label {transform: rotate(90deg);transform-origin: left top 0; padding: 6px 0 0 26px; text-align:left; height:1px; font-size:10px;}
 .y-scale { float:left; text-align:right; color:#333; font-size:8px; height:196px; margin-top:8px;}
 .y-scale div { border-top:1px solid #eee; width:11px; padding-right:3px; margin-top:1px;}

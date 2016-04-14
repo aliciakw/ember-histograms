@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('results');
+  this.route('frequency');
 });
 
 export default Router;

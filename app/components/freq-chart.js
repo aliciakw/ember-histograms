@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   data_scale: [],
   data_frequency: [],
   y_intervals: 5,
-  x_intervals: 5,
+  x_intervals: 6,
   y_scale_max: 0,
   chart_height: 170,
   chart_width: 200,
@@ -80,5 +80,5 @@ export default Ember.Component.extend({
       }
       return [min, max];
     }
-  }.property()
+  }.property('values')
 });
