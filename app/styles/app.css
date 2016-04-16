@@ -1,19 +1,31 @@
 /* Page Styles */
-body {font-family:'Helvetica Neue', 'Helvetica', sans-serif;}
+body {font-family:'Helvetica Neue', 'Helvetica', sans-serif; margin: 0;}
+header { text-align:center; width: 100%; color:#fff; background:#0EA98F;}
+header h2 { margin: 0; padding: 20px;}
 .container { text-align:center; width:100%;}
 .col-half { width:50%; float:left;}
-.experiment img { margin: 60px 10px 40px 10px; }
 .chart { margin-left: auto; margin-right: auto;}
-.title { margin: 30px;}
+.title { margin: 30px; }
+
+/* Dice */
+.dice-wrapper { margin: 60px auto; clear:both; width:238px;}
+.die { width:80px; height:80px; border:9px solid #5E5E67; margin:10px; display:inline-block; float:left; background-image: url('/images/dice_bg.svg'); }
+a.roll_btn {
+  color:#5e5e67; background:#b29959; padding:10px 20px 11px 30px; display:inline-block; margin-top:20px; font-weight:bold;
+  -webkit-transition: color .25s ease-in-out; -moz-transition: color .25s ease-in-out; -o-transition: color .25s ease-in-out; -ms-transition: color .25s ease-in-out; transition: color .25s ease-in-out;
+}
+.roll_btn::after { position:absolute; margin:-10px 0 0 20px; width:0; height:0; border-left:19px solid #b29959; border-top: 20px solid transparent; border-bottom: 20px solid transparent; content: ""; display: inline-block; }
+a.roll_btn:hover, a.roll_btn:active, a.roll_btn:focus { text-decoration:none; color:#fff; }
+.noselect { -webkit-touch-callout: none; -webkit-user-select: none;   -khtml-user-select: none;    -moz-user-select: none;      -ms-user-select: none;     user-select: none; }
 
 /* Chart Styles */
-.chart { width:250px;}
-.chart .title { margin-bottom:-30px; font-size:13px;}
+.chart { width:250px; }
+.chart .title { margin-bottom:-30px; font-size:13px; color:#5E5E67;}
 .x-scale { width:249px; color:#333; font-size:8px;}
 .x-scale div { float:left; text-align:right; border-right:1px solid #eee; height:11px; padding-right:2px;}
-.x-label { text-align:center; width:100%; font-size:10px;height:18px;}
+.x-label { text-align:center; width:100%; font-size:10px; height:18px; color:#5E5E67;}
 .x-scale div {text-align:right;}
-.y-label {transform: rotate(90deg);transform-origin: left top 0; padding: 6px 0 0 26px; text-align:left; height:1px; font-size:10px;}
+.y-label {transform: rotate(90deg);transform-origin: left top 0; padding: 6px 0 0 26px; text-align:left; height:1px; font-size:10px; color:#5E5E67;}
 .y-scale { float:left; text-align:right; color:#333; font-size:8px; height:196px; margin-top:8px;}
 .y-scale div { border-top:1px solid #eee; width:11px; padding-right:3px; margin-top:1px;}
 .chart-body { background-color:#f7f7f7; border-top:10px solid #f7f7f7; width:230px;overflow:hidden;}

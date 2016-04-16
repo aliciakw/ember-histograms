@@ -2,6 +2,10 @@
   {{#freq-chart title="Dice Results" values=values}}{{/freq-chart}}
 </div>
 <div class="col-half experiment">
-  <img src="/images/dice.png" /><br/>
-  <button {{action 'roll_the_dice'}}>Roll the Dice!</button>
+  <div class="dice-wrapper">
+    {{#each dice as |side_visible|}}
+      {{rolling-die position=side_visible}}
+    {{/each}}
+  </div><br/>
+  <a class="roll_btn noselect" {{action 'roll_the_dice' 2}}>roll the dice !</a>
 </div>
